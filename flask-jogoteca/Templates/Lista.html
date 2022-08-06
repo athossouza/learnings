@@ -1,5 +1,9 @@
 {% extends "template.html" %}
 {% block conteudo %}
+
+        <a href="{{ url_for('login') }}"><button type="submit" class="btn btn-primary btn-login">Login</button></a>
+        <a href="{{ url_for('logout') }}"><button type="submit" class="btn btn-danger btn-editar">Logout</button></a>
+        <a href="{{ url_for('novo') }}"><button type="submit" class="btn btn-primary btn-editar">Novo Jogo</button></a>
         <table class="table table-striped table-responsive table-bordered">
             <thead class="thead-default">
                 <tr>
@@ -22,4 +26,5 @@
                 {% endfor %}
             </tbody>
         </table>
+
 {% endblock %}
